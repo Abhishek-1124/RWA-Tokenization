@@ -89,7 +89,7 @@ const Transactions: React.FC = () => {
     if (isConnected) {
       loadMarketActivity();
     }
-  }, [isConnected]);
+  }, [isConnected, loadMarketActivity]);
 
   return (
     <div className="user-tools-page">

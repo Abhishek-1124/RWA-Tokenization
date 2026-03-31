@@ -78,7 +78,7 @@ const Issuer: React.FC = () => {
   useEffect(() => {
     // default recipient to connected wallet for convenience
     if (address && !recipient) setRecipient(address);
-  }, [address]);
+  }, [address, recipient]);
 
   const handleCreateAsset = useCallback(async () => {
     setCreateResult(null);

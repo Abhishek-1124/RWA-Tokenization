@@ -35,7 +35,7 @@ export const WalletProvider: React.FC<WalletProviderProps> = ({ children }) => {
         method: 'wallet_switchEthereumChain',
         params: [{ chainId: HEDERA_TESTNET_CONFIG.chainId }],
       });
-    } catch (switchError: any) {
+    } catch (switchError: unknown) {
       // Chain not added to MetaMask, try adding it
       if (switchError.code === 4902) {
         try {
@@ -201,7 +201,7 @@ export const WalletProvider: React.FC<WalletProviderProps> = ({ children }) => {
         }
       };
     }
-  }, [address]);
+  }, [address, connectWallet]);
 
   const value: WalletContextType = {
     address,

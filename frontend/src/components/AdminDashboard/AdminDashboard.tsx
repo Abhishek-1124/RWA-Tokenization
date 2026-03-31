@@ -49,7 +49,7 @@ const AdminDashboard: React.FC = () => {
         type: 'success',
         text: `Marketplace ${marketplacePaused ? 'resumed' : 'paused'} successfully`
       });
-    } catch (error) {
+    } catch (_error) {
       setStatusMessage({
         type: 'error',
         text: 'Failed to update marketplace status'
@@ -314,7 +314,7 @@ const TokenManagerCard: React.FC<{ isOwner: boolean }> = ({ isOwner }) => {
       setMessage({ type: 'success', text: 'Manager assigned to token successfully' });
       setManagerAddress('');
       setTokenId('');
-    } catch (error) {
+    } catch (_error) {
       setMessage({ type: 'error', text: 'Failed to assign manager to token' });
     }
     setIsLoading(false);
@@ -329,7 +329,7 @@ const TokenManagerCard: React.FC<{ isOwner: boolean }> = ({ isOwner }) => {
       setMessage({ type: 'success', text: 'Manager removed from token successfully' });
       setManagerAddress('');
       setTokenId('');
-    } catch (error) {
+    } catch (_error) {
       setMessage({ type: 'error', text: 'Failed to remove manager from token' });
     }
     setIsLoading(false);
@@ -342,7 +342,7 @@ const TokenManagerCard: React.FC<{ isOwner: boolean }> = ({ isOwner }) => {
     try {
       const result = await checkIsManagerForToken(managerAddress, parseInt(tokenId));
       setCheckResult(result);
-    } catch (error) {
+    } catch (_error) {
       setMessage({ type: 'error', text: 'Failed to check manager status' });
     }
     setIsLoading(false);

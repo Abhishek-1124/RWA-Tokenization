@@ -1,5 +1,9 @@
-import { describe, it, expect, vi, beforeEach } from 'vitest';
-import { renderHook, waitFor, act } from '@testing-library/react';
+// Change this:
+let myVar: any;
+
+// To something more specific, e.g.:
+let myVar: string; // or the correct typeimport { describe, it, expect, vi, beforeEach } from 'vitest';
+import { renderHook } from '@testing-library/react';
 import { useAdminContract } from './useAdminContract';
 import { Contract } from 'ethers';
 import React from 'react';
