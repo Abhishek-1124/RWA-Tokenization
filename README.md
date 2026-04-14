@@ -8,7 +8,7 @@
 
 A comprehensive Real World Asset (RWA) tokenization platform built on Hedera Hashgraph, enabling fractional ownership of physical assets through blockchain technology.
 
-## 🚀 Features
+##  Features
 
 - **Asset Registry**: Register and manage real-world assets on-chain
 - **Fractional Tokenization**: Create ERC-20 tokens representing asset fractions
@@ -17,7 +17,7 @@ A comprehensive Real World Asset (RWA) tokenization platform built on Hedera Has
 - **Hedera Integration**: Deployed on Hedera Testnet for fast, secure transactions
 - **MetaMask Integration**: Seamless wallet connectivity for users
 
-## 🏗️ Architecture
+##  Architecture
 
 ### Smart Contracts (Solidity)
 - **Admin.sol**: Platform administration and role management
@@ -33,7 +33,7 @@ A comprehensive Real World Asset (RWA) tokenization platform built on Hedera Has
 - **Issuer Portal**: Register new assets and create tokens
 - **Wallet Integration**: MetaMask connection and transaction handling
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Blockchain**: Hedera Hashgraph (Testnet)
 - **Smart Contracts**: Solidity ^0.8.0, OpenZeppelin
@@ -42,14 +42,14 @@ A comprehensive Real World Asset (RWA) tokenization platform built on Hedera Has
 - **Testing**: Foundry (Solidity), Vitest (Frontend)
 - **Deployment**: Foundry scripts
 
-## 📋 Prerequisites
+##  Prerequisites
 
 - Node.js 18+
 - Foundry (for Solidity development)
 - MetaMask wallet
 - Git
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Clone the Repository
 ```bash
@@ -92,7 +92,7 @@ npm run dev
 
 Visit `http://localhost:5173` to access the application.
 
-## 🔧 Configuration
+##  Configuration
 
 ### Contract Addresses
 
@@ -108,7 +108,7 @@ export const CONTRACT_ADDRESSES = {
 };
 ```
 
-## 🧪 Testing
+##  Testing
 
 ### Smart Contracts
 ```bash
@@ -121,7 +121,7 @@ cd frontend
 npm test
 ```
 
-## 📚 Usage Guide
+##  Usage Guide
 
 ### For Asset Issuers
 1. Connect MetaMask wallet
@@ -141,7 +141,7 @@ npm test
 3. Transfer ownership if needed
 4. Monitor platform activity
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -149,18 +149,18 @@ npm test
 4. Push to branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 📞 Support
+##  Support
 
 For questions or support:
 - Open an issue on GitHub
 - Check the [documentation](./docs/) folder
 - Review the [hackathon report](./docs/HACKATHON_REPORT.md)
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - Built for hackathons and real-world asset tokenization
 - Powered by Hedera Hashgraph
@@ -324,7 +324,7 @@ export const ADMIN_CREDENTIALS = {
 
 ### Contract address is zero
 - Update `ADMIN_CONTRACT_ADDRESS` in `frontend/src/config/contracts.ts`
-- Use the address from deployment output
+- Use the address from the deployment output
 
 ## Team Workflow
 
@@ -338,7 +338,7 @@ export const ADMIN_CREDENTIALS = {
 ### Redeploying Contracts
 
 If you redeploy contracts:
-1. Run deployment script
+1. Run the deployment script
 2. Update `ADMIN_CONTRACT_ADDRESS` in `frontend/src/config/contracts.ts`
 3. Notify team members to update their config
 
